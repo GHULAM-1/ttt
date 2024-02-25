@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Micro+5&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navBar {
+  background-color: #4b5257;
+  color: rgb(216, 182, 216);
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Micro 5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+body{
+    background-color: rgb(216, 182, 216);
+}
+.gamecontainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  
+}
+.container {
+    position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+  font-family: "Robo", sans-serif;
+  font-weight: 400;
+  margin-top: 60px;
+  font-style: normal;
+}
+.line{
+    position: absolute;
+    background-color:rgba(206, 81, 206, 0.832);
+    width: 100%;
+    left: 0;
+    height: .5vh;
+}
+.boxes {
+  border: 2px solid black;
+  font-size: 6rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: rgb(216, 182, 216)
+}
+
+.boxes:hover {
+  background-color:rgba(206, 81, 206, 0.832);
+}
+
+.gameinfo {
+  padding: 0px 34px;
+}
+.img img {
+  width: 0px;
+  transition: width 1s ease-in-out;
+}
+.bright {
+  border-right: 0;
+}
+.bleft {
+  border-left: 0;
+}
+.btop {
+  border-top: 0;
+}
+.bdown {
+  border-bottom: 0;
+}
+#reset {
+  width: 21vh;
+  padding: 10px;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 60px;
+  background-color: #4b5257;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-family: "Micro 5", sans-serif;
+  font-weight: 400;
+}
+#reset:hover {
+  background-color: rgba(206, 81, 206, 0.832);
+  color: #4b5257;
+  border: 2px solid #4b5257;
+}
+.gameinfo .info {
+  font-size: 2.5rem;
+}
+.gameinfo h2 {
+  text-align: center;
+  font-family: "Micro 5", sans-serif;
+  font-weight: 400;
+  font-size: 5rem;
+}
+.gameinfo div {
+  padding: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .gamecontainer {
+    flex-wrap: wrap;
+  }
+  .container {
+    grid-template-columns: repeat(3, 13vw);
+    grid-template-rows: repeat(3, 13vw);
+    margin-top: 20px;
+  }
+  .boxes{
+    font-size: 3.5rem;
+  }
+  #reset {
+    font-size: 1rem;
+    width: 18vh;
+    padding: 7px;
+    margin-top: 0;
+    margin-right:50px ;
+  }
+  .gameinfo div {
+    padding: 10px;
+  }
+  .container{
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .gameinfo h2 {
+    font-size: 2rem;
+  }
+  .gameinfo .info {
+    font-size: 1.5rem;
+    margin-left:40px ;
+  }
+  #reset {
+    font-size: 1rem;
+    width: 18vh;
+    padding: 7px;
+    margin-top: 0;
+    margin-right:50px ;
+  }
+  .boxes{
+    font-size: 3rem;
+  }
+  .gameinfo div {
+    padding: 10px;
+  }
+  .container{
+    margin-top: 30px;
+  }
+}
